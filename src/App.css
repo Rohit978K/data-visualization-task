@@ -1,0 +1,55 @@
+body,
+.app {
+  max-width: 1280px;
+  overflow: auto;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  height: 100dvh;
+}
+
+table {
+  white-space: nowrap;
+  margin: 0;
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+  border: 1px solid black;
+}
+
+table td,
+table th {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+}
+table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 25vw;
+  background: white;
+
+  box-shadow: 0 2px 5px #757575;
+}
+table td {
+  text-align: center;
+  background: white;
+}
+
+table thead th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  box-shadow: 2px 0 5px #757575;
+}
+table tbody td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  box-shadow: 2px 0 5px #757575;
+}
